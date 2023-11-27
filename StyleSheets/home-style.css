@@ -24,7 +24,6 @@ ul {
 nav {
   max-width: 100vw;
   align-items: center;
-  /* padding: 0 20px 0 20px; */
   height: 7vw;
   font-size: 10px;
   background-color: #082530;
@@ -45,6 +44,7 @@ h1 a {
   color: white;
 }
 .right-nav {
+  padding-right: 1vw;
   width: 40vw;
   justify-content: space-around;
   align-items: center;
@@ -66,6 +66,9 @@ li {
   font-size: 1.5em;
   color: white;
   cursor: pointer;
+}
+.ser {
+  color: white;
 }
 .content a {
   /* font-size: 1.2em; */
@@ -112,6 +115,10 @@ ul {
   font-weight: 600;
 }
 .menu-icon {
+  display: none;
+  /* width: 0; */
+}
+.bar-navbar {
   display: none;
 }
 nav i {
@@ -312,15 +319,20 @@ main .hero-section .hero-subheading {
   align-self: center;
   padding-bottom: 1vw;
 }
-.work1 button {
+.work1 a {
   background-color: #082530;
   color: #ffffff;
-  padding: 0.5em 1.5em;
-  font-size: 1.2em;
-  /* width: 10vw; */
   align-self: center;
 }
-
+.work1 button {
+  font-size: 1.2em;
+  color: #ffffff;
+  border: none;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+  background-color: #082530;
+}
 @media screen and (max-width: 800px) {
   .work {
     padding-top: 30px;
@@ -337,6 +349,7 @@ main .hero-section .hero-subheading {
 .record-sections {
   margin-left: 5vw;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 10vw;
 }
@@ -537,9 +550,11 @@ iframe {
   margin-left: 1vw;
 }
 
-.loc-logo img {
-  width: 50%;
-  height: 50%;
+.loc-logo i {
+  font-size: 1.8em;
+  color: #ffffff;
+  /* width: 50%; */
+  /* height: 50%; */
 }
 
 .loc-grid {
@@ -625,11 +640,12 @@ footer {
 }
 .copyright-section .copyright-content {
   font-size: 1.2em;
-  margin-left: 2px;
+  margin-left: 5px;
 }
-.copyright-section img {
-  width: 1.8em;
-  height: 1.8em;
+.copyright-section i {
+  padding-bottom: 0.2em;
+  /* width: 1.8em; */
+  /* height: 1.8em; */
 }
 
 .foot-loc {
@@ -637,10 +653,22 @@ footer {
   display: flex;
 }
 #footImg {
-  width: 1.7em;
   height: 1.7em;
+  width: 1.7em;
 }
+.whatsapp-img {
+  height: 1.8em;
+  width: 1.8em;
+}
+.footerIcon {
+  /* display: flex; */
+  /* align-items: center; */
+  font-size: 1.55em;
 
+  /* height: 1.7em; */
+  /* margin-bottom: auto; */
+  padding-top: 0.2em;
+}
 .foot-call-qry {
   width: 12%;
 }
@@ -653,6 +681,7 @@ footer {
 }
 .foot-cq-bottom {
   margin-top: 1vw;
+  /* border: none; */
   display: flex;
 }
 
@@ -670,6 +699,10 @@ footer {
 
 .foot-subheading {
   font-size: 1.3em;
+}
+.foot-subheading a {
+  text-decoration: none;
+  color: white;
 }
 .right-foot {
   display: flex;
