@@ -25,7 +25,9 @@
   <body>
     <nav>
       <div class="left-nav">
-        <img src="./assets/FInal-Logo.png" alt="LOGO" />
+        <a href="./index.html"
+          ><img src="./assets/FInal-Logo.png" alt="LOGO"
+        /></a>
         <h1><a href="./index.html">Besten Fabrication Services</a></h1>
       </div>
       <div class="right-nav">
@@ -47,9 +49,9 @@
           <li><a href="./about.html">About US</a></li>
           <li>
             <div class="call-us-nav">
-              <p id="call-text">Call Us Now</p>
+              <p id="call-text"><a href="tel:9892300378">Call Us Now</a></p>
               <div class="ph-no">
-                <p id="call-num"><a href="tel:7208626085">9892300378</a></p>
+                <p id="call-num"><a href="tel:9892300378">9892300378</a></p>
               </div>
             </div>
           </li>
@@ -77,9 +79,9 @@
       <li><a href="./about.html">About US</a></li>
       <li>
         <div class="call-us-nav">
-          <p id="call-text">Call Us Now</p>
+          <p id="call-text"><a href="tel:9892300378">Call Us Now</a></p>
           <div class="ph-no">
-            <p id="call-num"><a href="tel:7208626085">9892300378</a></p>
+            <p id="call-num"><a href="tel:9892300378">9892300378</a></p>
           </div>
         </div>
       </li>
@@ -204,9 +206,15 @@
             type="text"
             name="subject"
             id="subject"
+            maxlength="300"
             placeholder="Subject"
           />
-          <input type="text" name="msg" id="msg" placeholder="Message" />
+          <textarea
+            name="msg"
+            id="msg"
+            placeholder="Message"
+            maxlength="500"
+          ></textarea>
           <input id="btn" type="button" value="Submit" />
         </form>
       </div>
@@ -216,7 +224,8 @@
       <div class="footer-heading">Contact Us</div>
       <div class="footer-content">
         <div class="foot-loc">
-          <img id="footImg" src="./assets/loc-vector.png" alt="" />
+          <!-- <img id="footImg" src="./assets/loc-vector.png" alt="" /> -->
+          <i class="fa-solid footerIcon fa-location-dot"></i>
           <div class="foot-content">
             <div class="foot-loc-heading foot-heading">Location</div>
             <div class="foot loc-subheading foot-subheading">
@@ -227,30 +236,55 @@
         </div>
         <div class="foot-call-qry">
           <div class="foot-cq-top">
-            <img id="footImg" src="./assets/call-vector.png" alt="" />
+            <!-- <img id="footImg" src="./assets/call-vector.png" alt="" /> -->
+            <i class="fa-solid footerIcon fa-phone"></i>
             <div class="foot-content">
-              <div class="foot-heading">Call Us Now</div>
-              <div class="foot-subheading">98923 00378</div>
+              <div class="foot-heading">
+                <a href="tel:9892300378">Call Us Now</a>
+              </div>
+              <div class="foot-subheading">
+                <a href="tel:9892300378">9892300378</a>
+              </div>
             </div>
           </div>
           <div class="foot-cq-bottom">
-            <img id="footImg" src="./assets/email-vector.png" alt="" />
+            <!-- <img id="footImg" src="./assets/email-vector.png" alt="" /> -->
+            <i class="fa-solid footerIcon fa-envelope"></i>
             <div class="foot-content">
-              <div class="foot-heading">Mail Us Now</div>
-              <div class="foot-subheading">bestenfs@gmail.com</div>
+              <div class="foot-heading">
+                <a href="mailto:bestenfs@gmail.com">Mail Us Now</a>
+              </div>
+              <div class="foot-subheading">
+                <a href="mailto:bestenfs@gmail.com">bestenfs@gmail.com</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="right-foot">
           <div class="right-foot-top">
             <div class="connect">
-              <img id="footImg" src="./assets/connect.png" alt="" />
+              <!-- <img id="footImg" src="./assets/connect.png" alt="" /> -->
+              <i class="fa-solid footerIcon fa-link"></i>
               <div class="foot-content">
                 <div class="foot-heading">Connect Us At</div>
                 <div class="foot-icons">
-                  <img id="footImg" src="./assets/whatsapp.png" alt="" />
-                  <img id="footImg" src="./assets/facebook.png" alt="" />
-                  <img id="footImg" src="./assets/insta.png" alt="" />
+                  <a
+                    href="https://wa.me/9892300378?text=
+                  "
+                    ><img
+                      id="footImg footImgWhatsapp"
+                      target="_blank"
+                      class="whatsapp-img"
+                      src="./assets/whatsapp.png"
+                      alt=""
+                  /></a>
+
+                  <a href="#">
+                    <img id="footImg" src="./assets/facebook.png" alt="" />
+                  </a>
+                  <a href="#">
+                    <img id="footImg" src="./assets/insta.png" alt="" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -264,16 +298,17 @@
           </div>
           <br />
           <div class="right-foot-bottom">
-            <button>For Any Query ></button>
+            <a href="./about.html"><button>For Any Query ></button></a>
           </div>
         </div>
       </div>
       <div class="white-line"></div>
       <div class="copyright-section">
-        <img src="./assets/copyright.png" alt="" />
-
+        <!-- <img src="./assets/copyright.png" alt="" /> -->
+        <i class="fa-regular footerIcon fa-copyright"></i>
         <div class="copyright-content">
-          Copyright 2023. All Rights Reserved, Website by Abhinav & Robinson
+          Copyright 2023. All Rights Reserved,
+          <a href="tel:7208626085">Website by Abhinav & Robinson</a>
         </div>
       </div>
     </footer>
