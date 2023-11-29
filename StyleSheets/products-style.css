@@ -236,9 +236,84 @@ body {
 /* Main Section  */
 
 /* Products Page Image Section  */
-.products-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/Products-Title-Image.png");
+/* Gate Page Title Image */
+.products-image-gate {
+  background-image: linear-gradient(#00000080, rgba(0, 0, 0, 0.5)),
+    url("../assets/Gate-Title-Image.png");
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+/* Staircase Page Title Image */
+.products-image-staircase {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url("../assets/Staircase-Title-Page.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Shutter Page Title Image */
+.products-image-shutter {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../assets/Shutter-Title-Image.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Warehouse Page Title Image */
+.products-image-warehouse {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/Warehouse-Title-Image.png");
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Boundary Page Title Image */
+.products-image-boundary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/Boundary-Title-Image.png");
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* Custom Page Title Image */
+.products-image-custom {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/Custom-Title-Image.png");
   background-position: center;
   background-size: cover;
   height: 30vw;

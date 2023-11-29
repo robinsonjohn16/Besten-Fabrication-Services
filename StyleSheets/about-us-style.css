@@ -238,7 +238,7 @@ body {
 /** about us Image Section Styles */
 .about-us-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/Products-Title-Image.png");
+    url("../assets/About-Us-Title-Image.png");
   background-position: center;
   background-size: cover;
   height: 30vw;
@@ -369,12 +369,14 @@ body {
 .answer {
   /* display: none; */
   max-height: 0;
+  max-width: 40em;
+  text-align: justify;
   overflow: hidden;
   transition: max-height 0.2s;
   margin-top: 0.7vw;
   font-size: 1.3em;
   color: rgb(93, 91, 91);
-  text-indent: 20px;
+  /* text-indent: 20px; */
 }
 .answer.active {
   max-height: fit-content;
