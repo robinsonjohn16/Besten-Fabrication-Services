@@ -7,10 +7,10 @@
 }
 
 .left-nav img {
-  /* padding-left: 10px; */
   height: 5em;
   width: 5em;
   border-radius: 50%;
+  transition: all 0.2s ease;
 }
 
 .left-nav img:hover {
@@ -35,7 +35,6 @@ nav {
 .left-nav {
   padding-left: 1.3em;
   width: 50em;
-  /* font-size: 20px; */
   align-items: center;
 }
 
@@ -45,6 +44,7 @@ h1 a {
   font-size: 1.4em;
   text-decoration: none;
   color: white;
+  transition: all 0.2s ease;
 }
 h1 a:hover {
   font-size: 1.41em;
@@ -61,6 +61,7 @@ li a {
   list-style: none;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 li a:hover {
   font-size: 1.56em;
@@ -146,7 +147,7 @@ nav i {
 }
 .dropDown-right {
   display: flex;
-  /* position: absolute; */
+
   flex-direction: column;
   gap: 2em;
   font-size: 10px;
@@ -174,9 +175,6 @@ body {
 @media screen and (max-width: 600px) {
   nav {
     height: 10vh;
-    /* width: 90%; */
-    /* padding: 20px; */
-    /* font-size: 30px; */
     justify-content: space-between;
   }
 
@@ -232,7 +230,6 @@ body {
     font-size: 1em;
   }
 }
-
 /* Main Section  */
 /* Contact Page Image Section  */
 .contact-us-image {
@@ -506,14 +503,44 @@ iframe {
 }
 
 /* Footer */
+
 footer {
   width: 100%;
   margin-top: 6vw;
+  /* object-fit: cover; */
   color: white;
+  /* height: vh; */
   background-color: #082530;
   font-size: 10px;
 }
 
+.footer-heading {
+  padding-left: 3vw;
+  font-weight: 600;
+  font-size: 2.5em;
+  padding-bottom: 1vw;
+}
+.footer-content {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  margin-bottom: 2vw;
+}
+
+.white-line {
+  width: 95%;
+  margin: auto;
+  background-color: #ffffff;
+  height: 1px;
+}
+
+.gst img {
+  width: 30px;
+  height: 30px;
+}
 .copyright-section {
   height: 2vw;
   display: flex;
@@ -522,24 +549,154 @@ footer {
 }
 .copyright-section .copyright-content {
   font-size: 1.2em;
-  margin-left: 2px;
+  margin-left: 5px;
+}
+.copyright-section i {
+  padding-bottom: 0.2em;
+}
+
+.foot-loc {
+  width: 20%;
+  display: flex;
+}
+#footImg {
+  height: 1.7em;
+  width: 1.7em;
+  transition: all 0.5s;
+}
+#footImg:hover {
+  height: 1.9em;
+  width: 1.9em;
+}
+.whatsapp-img {
+  height: 2em;
+  width: 2em;
+  transition: all 0.5s;
+}
+.whatsapp-img:hover {
+  height: 2.1em;
+  width: 2.1em;
+}
+.footerIcon {
+  font-size: 1.55em;
+  padding-top: 0.2em;
+}
+
+.foot-call-qry {
+  width: 12%;
+}
+
+.right-foot {
+  width: 30%;
+}
+.foot-cq-top {
+  display: flex;
+}
+.foot-cq-bottom {
+  margin-top: 1vw;
+  display: flex;
+}
+
+.foot-content {
+  padding-left: 1vw;
+}
+.foot-heading {
+  font-weight: 700;
+  font-size: 1.6em;
+}
+.foot-heading a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.right-foot-bottom button {
+  font-size: 1.4em;
+}
+
+.foot-subheading {
+  font-size: 1.3em;
+}
+.foot-subheading a {
+  text-decoration: none;
+  color: white;
+}
+.right-foot {
+  display: flex;
+  flex-direction: column;
+}
+.right-foot-top {
+  display: flex;
+  justify-content: space-around;
+}
+.right-foot-bottom {
+  margin: auto;
+}
+.connect,
+.gst {
+  display: flex;
 }
 .copyright-section .copyright-content a {
   color: #ffffff;
   text-decoration: none;
 }
-.copyright-section img {
-  width: 1.8em;
-  height: 1.8em;
+.foot-icons {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-around;
+}
+.right-foot-bottom button {
+  width: 13vw;
+  height: 2.5vw;
+  font-weight: 500;
+}
+button {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .foot-loc {
+    width: 80%;
+  }
+  .footer-content {
+    margin: 0 0;
+    padding-top: 2em;
+  }
+  .foot-call-qry {
+    width: 80%;
+  }
+  .foot-cq-bottom {
+    width: 50%;
+    margin-top: 5vw;
+  }
+  .right-foot {
+    width: 80%;
+  }
+  .right-foot-top {
+    width: 100%;
+    flex-direction: column;
+  }
+  .gst {
+    padding-top: 2em;
+  }
+  .right-foot-bottom {
+    width: 80%;
+  }
+  .right-foot-bottom button {
+    width: 10em;
+    height: 3em;
+  }
+  .white-line {
+    margin-top: 1em;
+  }
   .copyright-section {
     height: 4em;
   }
   .copyright-section .copyright-content {
     font-size: 1em;
   }
+
   .copyright-section img {
     width: 1.8em;
     height: 1.8em;

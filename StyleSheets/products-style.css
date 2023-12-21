@@ -7,7 +7,6 @@
 }
 
 .left-nav img {
-  /* padding-left: 10px; */
   height: 5em;
   width: 5em;
   border-radius: 50%;
@@ -344,7 +343,12 @@ body {
 
 /*? Main Section Responsive */
 @media screen and (max-width: 800px) {
-  .products-image {
+  .products-image-gate,
+  .products-image-staircase,
+  .products-image-shutter,
+  .products-image-warehouse,
+  .products-image-boundary,
+  .products-image-custom {
     height: 50vh;
     width: 100vw;
   }
@@ -404,13 +408,13 @@ body {
   bottom: 0;
   color: #fff;
   font-size: 1em;
-  line-height: 1em;
   background-color: #000000;
   display: flex;
+  line-height: 1.3em;
   justify-content: center;
   gap: 0.5rem;
   border-radius: 0.5rem 0.5rem 0 0;
-  padding: 1rem 2rem;
+  padding: 1rem 0.7rem;
   left: 50%;
   transform: translate3d(-50%, 100%, 0);
   opacity: 0;
@@ -591,7 +595,6 @@ form {
     width: 48%;
   }
 }
-
 /* Footer Css */
 
 footer {
@@ -643,8 +646,6 @@ footer {
 }
 .copyright-section i {
   padding-bottom: 0.2em;
-  /* width: 1.8em; */
-  /* height: 1.8em; */
 }
 
 .foot-loc {
@@ -654,15 +655,26 @@ footer {
 #footImg {
   height: 1.7em;
   width: 1.7em;
+  transition: all 0.5s;
 }
-.whatsapp-img {
+#footImg:hover {
   height: 1.9em;
   width: 1.9em;
+}
+.whatsapp-img {
+  height: 2em;
+  width: 2em;
+  transition: all 0.5s;
+}
+.whatsapp-img:hover {
+  height: 2.1em;
+  width: 2.1em;
 }
 .footerIcon {
   font-size: 1.55em;
   padding-top: 0.2em;
 }
+
 .foot-call-qry {
   width: 12%;
 }
@@ -675,13 +687,11 @@ footer {
 }
 .foot-cq-bottom {
   margin-top: 1vw;
-  /* border: none; */
   display: flex;
 }
 
 .foot-content {
   padding-left: 1vw;
-  /* text-align: justify; */
 }
 .foot-heading {
   font-weight: 700;

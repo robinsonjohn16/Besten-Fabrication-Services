@@ -5,18 +5,14 @@ document.getElementById("btn").addEventListener("click", () => {
   const msg = document.querySelector("#msg").value;
 
   const finalMsg = `Name : ${name}, Email ${mail} and msg ${msg}`;
-  console.log(name);
-  console.log(mail);
-  console.log(subject);
-  console.log(msg);
   if (!name) {
-    alert("Enter your Name!");
+    alert("Please enter a valid Name!");
   } else if (!mail) {
-    alert("Enter your Email!");
+    alert("Please enter a valid Email!");
   } else if (!subject) {
-    alert("Enter the Subject!");
+    alert("Please enter a valid Subject!");
   } else if (!msg) {
-    alert("Enter your msg");
+    alert("Please mention your detailed Quote!");
   } else {
     Email.send({
       SecureToken: "bd14f7e4-1f2d-45d5-b71d-ba224ebbf30d",
@@ -24,7 +20,7 @@ document.getElementById("btn").addEventListener("click", () => {
       From: "bestenfabrication@gmail.com",
       Subject: subject,
       Body: finalMsg,
-    }).then((message) => alert("Done"));
+    }).then((message) => alert("Thankyou for connecting with us!!"));
     //  .catch(() =>
     //    alert(
     //      "Sorry the Quote System is not working at this moment, You can contact us through the Contact number mentioned below "

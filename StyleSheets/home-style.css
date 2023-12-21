@@ -5,12 +5,40 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+.fav-icon {
+  border-radius: 50%;
+}
+.whats-app {
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 20px;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.whats-app svg {
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s;
+}
+.whats-app svg:hover {
+  width: 42px;
+  height: 42px;
+}
 
 .left-nav img {
-  /* padding-left: 10px; */
   height: 5em;
   width: 5em;
   border-radius: 50%;
+  transition: all 0.2s ease;
 }
 
 .left-nav img:hover {
@@ -45,6 +73,7 @@ h1 a {
   font-size: 1.4em;
   text-decoration: none;
   color: white;
+  transition: all 0.2s ease;
 }
 h1 a:hover {
   font-size: 1.41em;
@@ -61,6 +90,7 @@ li a {
   list-style: none;
   font-weight: 600;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 li a:hover {
   font-size: 1.56em;
@@ -146,7 +176,7 @@ nav i {
 }
 .dropDown-right {
   display: flex;
-  /* position: absolute; */
+
   flex-direction: column;
   gap: 2em;
   font-size: 10px;
@@ -174,9 +204,6 @@ body {
 @media screen and (max-width: 600px) {
   nav {
     height: 10vh;
-    /* width: 90%; */
-    /* padding: 20px; */
-    /* font-size: 30px; */
     justify-content: space-between;
   }
 
@@ -272,8 +299,6 @@ main .hero-section .hero-subheading {
   main {
     height: 30em;
     width: 100vw;
-    /* background-position: center; */
-    /* background-size: cover; */
   }
   main .hero-section {
     padding: 20vw 5vw;
@@ -324,7 +349,6 @@ main .hero-section .hero-subheading {
   .about-us .about-content {
     padding-top: 3vw;
     line-height: 1.5;
-    /* font-weight: 800; */
   }
 }
 @media screen and (max-width: 400px) {
@@ -342,7 +366,6 @@ main .hero-section .hero-subheading {
 .work {
   display: flex;
   flex-wrap: wrap;
-  /* width: 100vw;  */
   gap: 5vw;
   font-size: 10px;
   padding-top: 2.5vw;
@@ -357,7 +380,7 @@ main .hero-section .hero-subheading {
   flex-direction: column;
   border: 0.5px solid #b4b4b4;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: 0.2s;
+  transition: all 0.3s ease;
 }
 .work1:hover {
   height: 33.4em;
@@ -499,11 +522,9 @@ main .hero-section .hero-subheading {
 }
 
 .testimonial .swiper-button-prev {
-  /* left: -0px; */
   top: 270px;
 }
 .testimonial .swiper-button-next {
-  /* right: -40px; */
   top: 270px;
 }
 .testimonial .swiper-pagination {
@@ -574,11 +595,9 @@ main .hero-section .hero-subheading {
   }
 
   .testimonial .swiper-button-prev {
-    /* left: -0px; */
     top: 20em;
   }
   .testimonial .swiper-button-next {
-    /* right: -40px; */
     top: 20em;
   }
   .testimonial .swiper-pagination {
@@ -587,7 +606,6 @@ main .hero-section .hero-subheading {
 }
 
 /* Location dets */
-
 .location-dets {
   padding-top: 6vw;
   width: 70vw;
@@ -598,7 +616,6 @@ main .hero-section .hero-subheading {
   font-size: 10px;
 }
 iframe {
-  /* width: 900px; */
   width: 100%;
   height: 25vw;
 }
@@ -612,6 +629,7 @@ iframe {
   justify-content: center;
   margin-left: 1vw;
 }
+
 .loc-con-heading a {
   color: #082530;
   text-decoration: none;
@@ -619,8 +637,10 @@ iframe {
 .loc-logo i {
   font-size: 1.8em;
   color: #ffffff;
-  /* width: 50%; */
-  /* height: 50%; */
+  transition: all 0.2s ease-out;
+}
+.loc-logo i:hover {
+  font-size: 1.9em;
 }
 
 .loc-grid {
@@ -640,10 +660,17 @@ iframe {
 .loc-con-heading {
   font-weight: 600;
   font-size: 1.5em;
+  transition: all 0.2s ease;
 }
-
+.loc-con-heading:hover {
+  font-size: 1.52em;
+}
 .loc-con-subheading {
   font-size: 1em;
+  transition: all 0.2s ease;
+}
+.loc-con-subheading:hover {
+  font-size: 1.02em;
 }
 .loc-con-subheading a {
   color: #082530;
@@ -714,8 +741,6 @@ footer {
 }
 .copyright-section i {
   padding-bottom: 0.2em;
-  /* width: 1.8em; */
-  /* height: 1.8em; */
 }
 
 .foot-loc {
@@ -725,15 +750,26 @@ footer {
 #footImg {
   height: 1.7em;
   width: 1.7em;
+  transition: all 0.5s;
 }
-.whatsapp-img {
+#footImg:hover {
   height: 1.9em;
   width: 1.9em;
+}
+.whatsapp-img {
+  height: 2em;
+  width: 2em;
+  transition: all 0.5s;
+}
+.whatsapp-img:hover {
+  height: 2.1em;
+  width: 2.1em;
 }
 .footerIcon {
   font-size: 1.55em;
   padding-top: 0.2em;
 }
+
 .foot-call-qry {
   width: 12%;
 }
@@ -746,13 +782,11 @@ footer {
 }
 .foot-cq-bottom {
   margin-top: 1vw;
-  /* border: none; */
   display: flex;
 }
 
 .foot-content {
   padding-left: 1vw;
-  /* text-align: justify; */
 }
 .foot-heading {
   font-weight: 700;

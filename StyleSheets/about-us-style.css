@@ -488,8 +488,6 @@ footer {
 }
 .copyright-section i {
   padding-bottom: 0.2em;
-  /* width: 1.8em; */
-  /* height: 1.8em; */
 }
 
 .foot-loc {
@@ -499,15 +497,26 @@ footer {
 #footImg {
   height: 1.7em;
   width: 1.7em;
+  transition: all 0.5s;
 }
-.whatsapp-img {
+#footImg:hover {
   height: 1.9em;
   width: 1.9em;
+}
+.whatsapp-img {
+  height: 2em;
+  width: 2em;
+  transition: all 0.5s;
+}
+.whatsapp-img:hover {
+  height: 2.1em;
+  width: 2.1em;
 }
 .footerIcon {
   font-size: 1.55em;
   padding-top: 0.2em;
 }
+
 .foot-call-qry {
   width: 12%;
 }
@@ -520,13 +529,11 @@ footer {
 }
 .foot-cq-bottom {
   margin-top: 1vw;
-  /* border: none; */
   display: flex;
 }
 
 .foot-content {
   padding-left: 1vw;
-  /* text-align: justify; */
 }
 .foot-heading {
   font-weight: 700;
