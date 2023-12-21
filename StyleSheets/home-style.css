@@ -357,6 +357,12 @@ main .hero-section .hero-subheading {
   flex-direction: column;
   border: 0.5px solid #b4b4b4;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+.work1:hover {
+  height: 33.4em;
+  width: 34em;
+  box-shadow: 6px 6px 6px 0px rgba(0, 0, 0, 0.45);
 }
 .work1 img {
   object-fit: cover;
@@ -449,7 +455,6 @@ main .hero-section .hero-subheading {
 }
 
 /* Testimonials */
-
 .testimonial {
   padding-top: 6vw;
   position: relative;
@@ -482,7 +487,7 @@ main .hero-section .hero-subheading {
 
 .swiper-slide {
   text-align: center;
-  /* height: 30em; */
+
   background-color: #f1f1f1;
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
 }
