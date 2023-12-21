@@ -603,6 +603,17 @@ footer {
 .foot-heading {
   font-weight: 700;
   font-size: 1.6em;
+  transition: all 0.5s ease-in;
+}
+.foot-heading:hover {
+  font-size: 1.64em;
+}
+.foot-subheading:hover {
+  font-size: 1.34em;
+}
+.foot-subheading {
+  font-size: 1.3em;
+  transition: all 0.5s ease-in;
 }
 .foot-heading a {
   color: #ffffff;
@@ -610,10 +621,6 @@ footer {
 }
 .right-foot-bottom button {
   font-size: 1.4em;
-}
-
-.foot-subheading {
-  font-size: 1.3em;
 }
 .foot-subheading a {
   text-decoration: none;

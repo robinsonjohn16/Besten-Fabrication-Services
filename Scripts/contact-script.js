@@ -4,7 +4,7 @@ document.getElementById("btn").addEventListener("click", () => {
   const subject = document.querySelector("#subject").value;
   const msg = document.querySelector("#msg").value;
 
-  const finalMsg = `Name : ${name}, Email ${mail} and msg ${msg}`;
+  const finalMsg = `Name : ${name}\n, Email ${mail} \n Message ${msg}`;
   if (!name) {
     alert("Please enter a valid Name!");
   } else if (!mail) {
@@ -21,10 +21,5 @@ document.getElementById("btn").addEventListener("click", () => {
       Subject: subject,
       Body: finalMsg,
     }).then((message) => alert("Thankyou for connecting with us!!"));
-    //  .catch(() =>
-    //    alert(
-    //      "Sorry the Quote System is not working at this moment, You can contact us through the Contact number mentioned below "
-    //    )
-    //  );
   }
 });
