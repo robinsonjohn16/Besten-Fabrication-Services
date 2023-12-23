@@ -23,3 +23,12 @@ document.getElementById("btn").addEventListener("click", () => {
     }).then((message) => alert("Thankyou for connecting with us!!"));
   }
 });
+
+const toggleBtn = document.querySelector(".menu-icon");
+const toggleBtnIcon = document.querySelector(".menu-icon i");
+const dropDowm = document.querySelector(".dropDown-right");
+toggleBtn.onclick = function () {
+  dropDowm.classList.toggle("open");
+  const isOpen = dropDowm.classList.contains("open");
+  toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
+};

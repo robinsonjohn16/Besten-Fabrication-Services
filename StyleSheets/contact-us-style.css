@@ -10,7 +10,6 @@
   height: 5em;
   width: 5em;
   border-radius: 50%;
-  transition: all 0.2s ease;
 }
 
 .left-nav img:hover {
@@ -35,6 +34,7 @@ nav {
 .left-nav {
   padding-left: 1.3em;
   width: 50em;
+  /* font-size: 20px; */
   align-items: center;
 }
 
@@ -44,7 +44,6 @@ h1 a {
   font-size: 1.4em;
   text-decoration: none;
   color: white;
-  transition: all 0.2s ease;
 }
 h1 a:hover {
   font-size: 1.41em;
@@ -61,7 +60,6 @@ li a {
   list-style: none;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.2s ease;
 }
 li a:hover {
   font-size: 1.56em;
@@ -147,7 +145,7 @@ nav i {
 }
 .dropDown-right {
   display: flex;
-
+  /* position: absolute; */
   flex-direction: column;
   gap: 2em;
   font-size: 10px;
@@ -175,6 +173,9 @@ body {
 @media screen and (max-width: 600px) {
   nav {
     height: 10vh;
+    /* width: 90%; */
+    /* padding: 20px; */
+    /* font-size: 30px; */
     justify-content: space-between;
   }
 
@@ -230,6 +231,7 @@ body {
     font-size: 1em;
   }
 }
+
 /* Main Section  */
 /* Contact Page Image Section  */
 .contact-us-image {
