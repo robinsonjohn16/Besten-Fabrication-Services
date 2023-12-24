@@ -324,6 +324,22 @@ body {
   color: #ffffff;
 }
 
+/* Tensile Sheets Page Title Image */
+.products-image-tensile {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url("../assets/Tensile-Sheet-Title.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 30vw;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+
 .home-products a {
   color: #ffffff;
   font-size: 0.85em;

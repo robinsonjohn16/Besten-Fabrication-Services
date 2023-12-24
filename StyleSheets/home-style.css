@@ -281,7 +281,7 @@ main .hero-section .hero-heading {
 
 main .hero-section .hero-subheading {
   padding-left: 40vw;
-  position: relative;
+  /* position: relative; */
   top: -3vw;
 }
 
