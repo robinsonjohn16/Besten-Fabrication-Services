@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper2", {
   slidesPerView: 3,
   // effect: "fade",
   speed: 400,
@@ -36,24 +36,12 @@ const swiper = new Swiper(".swiper", {
 
 const swiper1 = new Swiper(".swiper1", {
   slidesPerView: 1,
-  // effect: "cube",
-  // loop: "true",
   speed: 400,
   spaceBetween: 50,
-  autoHeight: true,
+  // autoHeight: true,
   centeredSlides: true,
-  breakpoints: {
-    300: {
-      slidesPerView: 1,
-      spaceBetween: 50,
-    },
-    800: {
-      slidesPerView: 1,
-      spaceBetween: 50,
-    },
-  },
   autoplay: {
-    delay: 1500,
+    delay: 2000,
     disableOnInteraction: false,
   },
   lazyLoading: true,
