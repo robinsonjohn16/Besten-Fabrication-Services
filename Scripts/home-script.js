@@ -34,6 +34,31 @@ const swiper = new Swiper(".swiper", {
   lazyLoading: true,
 });
 
+const swiper1 = new Swiper(".swiper1", {
+  slidesPerView: 1,
+  // effect: "cube",
+  // loop: "true",
+  speed: 400,
+  spaceBetween: 50,
+  autoHeight: true,
+  centeredSlides: true,
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    },
+    800: {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    },
+  },
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  lazyLoading: true,
+});
+
 const toggleBtn = document.querySelector(".menu-icon");
 const toggleBtnIcon = document.querySelector(".menu-icon i");
 const dropDowm = document.querySelector(".dropDown-right");

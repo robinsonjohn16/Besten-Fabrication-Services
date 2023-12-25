@@ -486,26 +486,31 @@ main .hero-section .hero-subheading {
   font-size: 10px;
 }
 .clients-sections {
+  margin-top: 5em;
+  width: 90%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 7em;
 }
 .client {
+  margin: auto;
   width: 15%;
-  height: 10%;
+  height: 15%;
 }
 .client img {
   width: 100%;
   height: 100%;
 }
-.client:nth-child(3) {
-  width: 10%;
+.client .swiper1 {
+  width: 94%;
+  padding: 10px 10px 10px 10px !important;
 }
-.client:nth-child(2) {
-  width: 19%;
-}
+/* .client:nth-child(3) { */
+/* width: 10%; */
+/* } */
+/* .client:nth-child(2) { */
+/* width: 19%; */
+/* } */
 @media screen and (max-width: 800px) {
   .clients {
     margin-top: 9vw;
@@ -531,38 +536,37 @@ main .hero-section .hero-subheading {
   margin: 0 auto;
   font-size: 10px;
 }
-.swiper {
+.testimonial .swiper {
   width: 94%;
   padding: 10px 10px 10px 10px !important;
 }
-.swiper-pagination {
+.testimonial .swiper-pagination {
   color: white;
 }
-.swiper-button-next {
+.testimonial .swiper-button-next {
   color: #ffffff;
 }
-.swiper-pagination-bullet {
+.testimonial .swiper-pagination-bullet {
   background-color: black !important;
 }
 
-.swiper-pagination-bullet-active {
+.testimonial .swiper-pagination-bullet-active {
   background-color: white;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
+.testimonial .swiper-button-next:hover,
+.testimonial .swiper-button-prev:hover {
   color: gray !important;
 }
 
-.swiper-slide {
+.testimonial .swiper-slide {
   text-align: center;
-
   background-color: #f1f1f1;
   box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.25);
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.testimonial .swiper-button-next:after,
+.testimonial .swiper-button-prev:after {
   font-size: 2.5em !important;
   color: black !important;
 }
@@ -626,16 +630,16 @@ main .hero-section .hero-subheading {
     border-radius: 50%;
     margin-left: 2vw;
   }
-  .swiper {
+  .testimonial .swiper {
     width: 85%;
     margin-top: 5vw;
   }
 
-  .s-slides-content {
+  .testi1 .s-slides-content {
     height: 23em;
   }
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
+  .testimonial .swiper-button-next:after,
+  .testimonial .swiper-button-prev:after {
     font-size: 2em !important;
     color: black !important;
   }
